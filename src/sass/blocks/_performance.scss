@@ -1,0 +1,28 @@
+.performance {
+    min-height: 735px;
+    padding-top: 44px;
+    background: url('../img/performance_bg.jpg') no-repeat center / cover;
+    &__subtitle {
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    &__title {
+        margin-top: 11px;
+        text-align: center;
+    }
+
+    &__descr {
+        margin: 15px auto 0;
+        width: 488px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    &__btn {
+        display: block;
+        margin: 20px auto 0;
+        font-size: 15px;
+        width: 201px;
+    }
+}

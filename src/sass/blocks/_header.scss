@@ -1,4 +1,10 @@
 .header {
+    background: rgba($color: #fff, $alpha: 0.9);
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+
 
     &__subheader {
         background-color: $main-color;

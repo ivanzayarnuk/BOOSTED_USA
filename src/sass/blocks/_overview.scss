@@ -1,0 +1,36 @@
+.overview {
+    min-height: 860px;
+    padding-top: 55px;
+
+    &__wrapper {
+        display: grid;
+        grid-template: minmax(304px, auto) / repeat(2, 540px);
+        grid-auto-rows: minmax(304px, auto);
+        justify-content: center;
+        gap: 20px;
+    }
+    &__item {
+        height: 304px;
+    }
+
+    &__video {
+        width: 540px;
+        height: 304px;
+    }
+
+    &__title {
+        margin-top: 65px;
+        font-weight: 700;
+    }
+
+    &__decoration {
+        margin-top: 13px;
+        width: 100%;
+        height: 66px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 2px 0px 10px rgba(41, 44, 61, 0.34);
+        border-radius: 0px;
+    }
+
+
+}

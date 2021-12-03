@@ -2,6 +2,11 @@
     font-weight: 400;
     color: #000000;
     text-align: center;
+    
+    &_fz14 {
+        font-size: 14px;
+        line-height: 18px;
+    }
     &_fz15 {
         font-size: 15px;
         line-height: 19px;
@@ -15,9 +20,22 @@
         line-height: 30px;
     }
 
+    &_fz31 {
+        font-weight: bold;
+        font-size: 31px;
+        line-height: 36px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
     &_fz32{
         font-size: 32px;
         line-height: 36px;  
+    }
+    &_fz45 {
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 51px;
     }
     
 

@@ -1,0 +1,93 @@
+.carousel {
+    position: relative;
+
+    padding: 40px 0 0;
+    width: 100%;
+    .owl-carousel {
+        width: 100%;
+        min-height: 200px;
+        margin: 0 auto;
+        cursor: move;
+        .owl-dots {
+            .active{
+             span{
+                background-color: red;
+            }
+        }
+        }
+        
+    }
+    .customPrevBtn, .customNextBtn  {
+        position: absolute;
+        top: 52%;
+        transform: translateY(50%);
+        left: 15px;
+        border: none;
+        background-color: rgba($color: #fff, $alpha: 0.75);
+        width: 44px;
+        height: 44px;
+        border-radius: 22px;
+        border-color: rgba($color: #fff, $alpha: 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s linear;
+        &:hover {
+            background-color: rgba($color: #fff, $alpha: 1);
+        }
+
+        &:active {
+            background-color: rgba($color: #000, $alpha: .3);
+        }
+        img {
+           width: 17.85px;
+           height: 18.3px;
+        }
+        z-index: 10;
+    }
+
+    &__item {
+        position: relative;
+        display: block;
+        transition: transform 0.3s linear;
+    }
+    &__item:hover {
+        text-decoration: none;
+        transform: translateY(-5px) scale(1.04);
+    }
+    .customNextBtn {
+        right: 15px;
+        left: auto;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        width: 140px;
+        min-height: 52px;
+    }
+    &__name {
+        margin: 12px 0 4px;
+        text-align: center;
+        color: $red-color;
+    }
+    &_wrap {
+        display: flex;
+        justify-content: center;
+    }
+    &__out {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 15px;
+        line-height: 18px;
+    }
+    &__price {
+        text-align: center;
+        color: #000000;
+    }
+    &__new-price {
+        margin-left: 4px;
+        text-align: center;
+        color: $red-color;
+    }
+}
+

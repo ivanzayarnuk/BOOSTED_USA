@@ -75,7 +75,7 @@ gulp.task('images', function () {
 gulp.task('ghDeploy', function() {
     return gulp.src('dist/**/*')
     .pipe(ghPages({
-    remoteUrl: '',
+    remoteUrl: 'https://github.com/ivanzayarnuk/BOOSTED_USA.git',
 }));
 });
 
