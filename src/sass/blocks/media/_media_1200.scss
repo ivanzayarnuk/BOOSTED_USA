@@ -2,4 +2,130 @@
     .container {
         max-width: 960px;
     }
+    .welcome {
+        background: url('../img/bg.jpg') no-repeat center / cover;
+        &__title {
+            font-size: 40px;
+        }
+        &__btn {
+            width: 175px;
+        }
+    }
+
+    .company {
+        &__name {
+            width: 135px;
+        }
+    }
+
+    .offer {
+        padding: 40px 0 20px;
+        min-height: 725px;
+        &__wrapper {
+            grid-template-columns: repeat(2,466px);
+            grid-auto-rows: 466px;
+            gap: 16px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__item-title {
+            font-size: 24px;
+        }
+    }
+
+    .performance {
+        min-height: 600px;
+        &__title {
+            font-size: 38px;
+        }
+        &__btn {
+            width: 175px;
+        }
+    }
+
+    .revs {
+        min-height: 730px;
+        &__allshop {
+            gap: 12px;
+        }
+
+        &__item {
+            width: auto;
+            &-title {
+                font-size: 28px;
+            }
+            &-descr {
+                font-size: 14px;
+                margin-top: 10px;
+                line-height: 21px;
+            }
+            &-block {
+                padding: 0 13px 0 13px;
+            }
+        }
+
+        &__punct {
+            &-title {
+                font-size: 23px;
+                margin-bottom: 13px;
+            }
+            &-subtitle {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .overview {
+        
+        &__wrapper {
+            padding: 0 10px;
+            grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+            grid-template-rows: 330px;
+            gap: 10px;
+        }
+
+        &__title {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+    }
+    .carousel {
+        height: 290px;
+    }
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 180px;
+        margin: 0 auto;
+    }
+
+    // Carousel
+    .benefits {
+        min-height: 284px;
+        &__item {
+            height: 234px;
+            padding: 0 12px;
+            &:first-child, &:last-child {
+                padding: 0 18px;
+            }
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__img {
+            width: 76px;
+            height: 70px;
+        }
+
+        &__descr {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    }
+
+    .footer {
+        &__info {
+            grid-template: minmax(230px,auto)/160px 115px 280px 275px;
+        }
+    }
 }

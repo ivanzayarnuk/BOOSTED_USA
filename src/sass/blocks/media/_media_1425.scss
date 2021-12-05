@@ -1,0 +1,28 @@
+@media (max-width: 1440px) {
+    .header {
+        &__wrapper {
+            display: grid;
+            grid-template: 66px/182px 736px 51px;
+            justify-content: space-between;
+            nav {
+                grid-column: 2/3;
+            }
+        }
+        
+    }
+
+    .revs {
+        min-height: 871px;
+        &__allshop {
+            display: grid;
+            grid-template: 1fr/repeat(3,1fr);
+            gap: 20px;
+            grid-auto-rows: 1fr;
+            justify-content: center;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(3,auto);
+            grid-auto-rows: auto;
+        }
+    }
+}

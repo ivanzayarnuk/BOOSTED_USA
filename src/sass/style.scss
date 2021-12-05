@@ -14,7 +14,6 @@
 
 .container {
     position: relative;
-    // width: 1450px;
     width: 1210px;
     padding: 0 5px;
     margin: 0 auto;
@@ -39,3 +38,10 @@
 @import 'blocks/carousel';
 @import 'blocks/benefits';
 @import 'blocks/footer';
+@import 'blocks/media/media_1425';
+@import 'blocks/media/media_1200';
+@import 'blocks/media/media_1050';
+@import 'blocks/media/media_992';
+@import 'blocks/media/media_870';
+@import 'blocks/media/media_768';
+@import 'blocks/media/media_576';

@@ -1,0 +1,20 @@
+@media (max-width: 870px) {
+
+    .header {
+        &__wrapper {
+            grid-template: 66px/182px 544px 51px;
+        }
+        &__menu {
+            &-link {
+                font-size: 11px;
+            }
+            &-item {
+                margin-right: 12px;
+                &:last-child {
+                    margin-right: 12px;   
+                }
+            }
+        }
+    }
+
+}

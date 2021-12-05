@@ -2,5 +2,207 @@
     .container {
         max-width: 720px;
     }
+
+    .header {
+        &__wrapper {
+            grid-template: 66px/182px 590px 51px;
+        }
+        &__menu {
+            &-link {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .welcome {
+        &__title {
+            font-size: 39px;
+        }
+
+        &__btn {
+            width: 170px;
+        }
+        .welcome__btn+.welcome__btn {
+            margin-left: 44px;
+        }
+    }
+
+    .company {
+     
+        &__name {
+            width: 135px;
+        }
+    }
+
+    .offer {
+        min-height: 567px;
+        &__wrapper {
+            margin-top: 30px;
+            grid-template-columns: repeat(2,345px);
+            grid-auto-rows: 345px;
+            gap: 16px;
+        }
+        &__title {
+            font-size: 28px;
+        }
+
+        &__descr {
+            font-size: 14px;
+        }
+
+        .divider {
+            margin: 19px auto 0
+        }
+        
+        &__item {
+            &-icon {
+                width: 25px;
+            }
+            
+            &-arrow {
+                height: 46px;
+                width: 29px;
+                margin: 0 auto 2px;
+            }
+            
+            &-title {
+                font-size: 22px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .performance {
+        min-height: 100vh;
+        &__title {
+            font-size: 34px;
+        }
+        &__btn {
+            width: 164px;
+            font-size: 15px;
+            line-height: 33px;
+        }
+        .title_fz15 {
+            font-size: 15px;
+        }
+    }
+
+    .revs {
+        padding: 35px 0 0 0;
+        min-height: 610px;
+        &__item {
+
+            width: auto;
+
+            &-title {
+                font-size: 25px;
+            }
+            &-descr {
+                font-size: 13px;
+                margin-top: 2px;
+                line-height: 18px;
+            }
+
+            &-btn {
+                margin-top: 12px;
+                margin-left: 20px;
+            }
+        }
+                
+        &__allshop {
+            gap: 4px;
+        }
+        &__punct {
+            &-title {
+                font-size: 21px;
+                margin-bottom: 4px;
+            }
+            &-subtitle {
+                font-size: 14px;
+            }
+        }
+
+        &__wrapper {
+            margin-top: 35px;
+        }
+    }
+
+    .overview {
+        min-height: 800px;
+        padding-top: 35px;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+            grid-template-rows: 263px;
+            grid-auto-rows: 263px;
+            gap: 10px;
+
+        }
+
+        &__video {
+            width: 100%;
+            height: 262px;
+        }
+        &__title {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+    }
+
+    .carousel {
+        .customNextBtn, .customPrevBtn {
+            display: none;
+        }
+    }
+
+    .benefits {
+        min-height: 200px;
+        padding: 18px 10px 18px 10px;
+        &__item {
+            height: 210px;
+            padding: 0 5px;
+            justify-content: center;
+            width: 242px;
+            &:first-child, &:last-child {
+                padding: 0 5px;
+            }
+        }
+        &__title {
+            font-size: 23px;
+        }
+        &__img {
+            width: 67px;
+            height: 62px;
+        }
+
+        &__descr {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+    }
+
+    .footer {
+        &__info {
+            margin-top: 30px;
+            min-height: 260px;
+            grid-template: minmax(230px,auto)/140px 48px 190px 271px;
+            &-icon {
+                width: 140px;
+            }
+        }
+        &__about-title {
+            font-size: 18px;
+        }
+        .boost {
+            padding: 10px 10px 20px;
+            align-items: start;
+            flex-direction: column;
+            flex-wrap: wrap;
+            &__service {
+                // align-self: start;
+                margin-bottom: 10px;
+            }
+        }
+    }
     
 }

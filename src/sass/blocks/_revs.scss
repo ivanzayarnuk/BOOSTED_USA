@@ -4,9 +4,9 @@
 
     &__allshop {
         display: grid;
-        grid-template: minmax(380px, auto) / repeat(3, 380px);
+        grid-template: 1fr/repeat(3,1fr);
         gap: 20px;
-        grid-auto-rows: minmax(380px, auto);
+        grid-auto-rows: 1fr;
         justify-content: center;
     }
 

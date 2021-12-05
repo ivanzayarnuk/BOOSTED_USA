@@ -1,36 +1,26 @@
 .overview {
-    min-height: 860px;
+    min-height: 898px;
     padding-top: 55px;
 
+
     &__wrapper {
+        padding: 0 190px 0 150px;
         display: grid;
-        grid-template: minmax(304px, auto) / repeat(2, 540px);
-        grid-auto-rows: minmax(304px, auto);
+        grid-template-columns: repeat(2, minmax(430px, 540px));
+        grid-template-rows: 304px;
+        grid-auto-rows: 304px;
         justify-content: center;
         gap: 20px;
     }
-    &__item {
-        height: 304px;
-    }
 
     &__video {
-        width: 540px;
-        height: 304px;
+        width: 100%;
+        height: 100%;
     }
 
     &__title {
         margin-top: 65px;
         font-weight: 700;
     }
-
-    &__decoration {
-        margin-top: 13px;
-        width: 100%;
-        height: 66px;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 2px 0px 10px rgba(41, 44, 61, 0.34);
-        border-radius: 0px;
-    }
-
 
 }

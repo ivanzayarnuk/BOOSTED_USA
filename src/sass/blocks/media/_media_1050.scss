@@ -1,0 +1,20 @@
+@media (max-width: 1050px) {
+    .header {
+        &__wrapper {
+            grid-template: 66px/182px 670px 51px;
+            justify-content: space-around;
+        }
+        &__block {
+            grid-column: 3/4;
+        }
+        &__menu {
+            padding: 0 0 0 0;
+            &-link {
+                font-size: 13px;
+            }
+            &-item {
+                margin-right: 15px;
+            }
+        }
+    }
+}

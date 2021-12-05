@@ -9,8 +9,10 @@
     &__subheader {
         background-color: $main-color;
         min-height: 29px;
+        margin: 0 auto;
         &-title {
             width: 100%;
+            margin: 0 auto;
             line-height: 28px;
             font-weight: 400;
             font-size: 12px;
@@ -121,4 +123,8 @@
 
                
     }
+}
+
+.hamburger {
+    display: none;
 }

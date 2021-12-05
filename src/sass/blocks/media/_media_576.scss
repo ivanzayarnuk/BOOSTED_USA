@@ -1,6 +1,217 @@
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 5px;
     }    
+
+    .header {
+        &__block {
+            width: 45%; //**********
+            transition: .6s all ease-in;
+            &-active {
+                left: 13%;
+            }
+        }
+
+        &__menu {
+            width: 85%; //**
+            justify-content: start;
+            padding-top: 28%;
+
+            &_active {
+                left: 0;
+            }
+
+            &-link {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .hamburger {
+        right: 12px;
+        top: 48px;
+    }
+
+    .welcome {
+        &__title {
+            font-size: 30px;
+        }
+
+        &__btn {
+            width: 133px;
+            font-size: 12px;
+            line-height: 35px;
+        }
+     
+        &__buttons {
+            justify-content: center;
+        }
+        .welcome__btn+.welcome__btn {
+            margin-left: 18px;
+        }
+    }
+
+    .company {
+        &__wrapper {
+            padding: 0px 10px;
+        }
+    }
+
+    .offer {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fill, 320px);
+            grid-auto-rows: 320px;
+            gap: 4px;
+        }
+        &__title {
+            font-size: 23px;
+        }
+        &__descr {
+            width: auto;
+        }
+    }
+
+    .performance {
+        padding-top: 22px;
+        &__title {
+            font-size: 27px;
+        }
+        &__descr {
+            width: auto;
+            margin: 9px auto 0;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .revs {
+        padding-top: 0;
+        &__allshop {
+            display: grid;
+            grid-template: minmax(300px, auto) repeat(2,1fr)  / 1fr;
+            gap: 5px;
+            grid-auto-rows: auto;
+        }
+    
+        &__item {
+            width: auto;
+   
+            &-block {
+                grid-row: 1/2;
+                padding: 0 13px 0 13px;
+            }
+            &-descr {
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+
+        &__wrapper {
+            margin-top: 20px;
+            grid-template-columns: auto;
+            grid-auto-rows: auto;
+        }
+    }
+
+    .overview {
+        min-height: 1020px;
+        padding-top: 35px;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(275px, 480px));
+            grid-template-rows: 262px;
+            grid-auto-rows: 262px;
+            gap: 10px;
+
+        }
+
+        &__video {
+            width: 100%;
+            height: 262px;
+        }
+        &__title {
+            font-size: 26px;
+            margin-top: 30px;
+        }
+    }
+    .carousel {
+        padding: 5px 0 0;
+        height: 270px;
+        .customNextBtn, .customPrevBtn {
+            display: none;
+        }
+        &__decoration {
+            height: 40px;
+        }
+    }
+ 
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 180px;
+    }
+    .divider {
+        margin-top: 25px;
+    }
+
+    .footer {
+        &__info {
+            height: 100%;
+            grid-column: unset;
+            margin-top: 20px;
+            min-height: auto;
+            grid-template-rows: minmax(200px,min-content);
+            grid-auto-rows: minmax(184px,min-content);
+            row-gap: 30px;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            &-icon {
+                justify-self: center;
+                align-self: center;
+                width: 150px;
+            }
+        }
+        
+        &__explore {
+            padding-left: 20px;
+            grid-column: unset;
+            &-title {
+                font-size: 23px;
+                font-weight: 500;
+            }
+            &-icon {
+                font-size: 15px;
+            }
+        }
+        &__about{
+            padding-left: 20px;
+
+            &-title {
+                font-size: 22px;
+            }   
+            &-descr {
+                font-size: 15px;
+                line-height: 21px;
+            }
+        }
+        .boost {
+            padding: 10px 20px 20px;
+            align-items: end;
+            flex-direction: column;
+            flex-wrap: wrap;
+            &__service {
+                order: 2;
+                font-size: 12px;
+                align-self: start;
+                margin-top: 10px;
+            }
+            &__pay {
+                order: 1;
+                flex-wrap: wrap;
+                justify-content: center;
+                &-block {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    
 }
