@@ -32,7 +32,8 @@ window.addEventListener('DOMContentLoaded', () => {
 /*Carousel begin*/
 var owl = $('.owl-carousel');
     owl.owlCarousel({
-        // autoplay:true,
+        autoplay:true,
+        autoplayHoverPause: true,
         autoplayTimeout:2000,
         loop: true,
         items: 7,
